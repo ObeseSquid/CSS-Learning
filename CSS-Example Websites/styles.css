@@ -1,9 +1,10 @@
 body {
-  background-color: aliceblue;
+  background-color: #dcdcdc;
 }
 
 table {
-  border: 1px solid ghostwhite;
+  border: 1px solid #dcdcdc;
+  width: 100%;
 }
 
 h1 {
@@ -12,13 +13,22 @@ h1 {
 }
 
 .header-box {
-  background-color: lightblue;
+  background-color: #c5d7eb;
 }
 
 hr {
   background-color: navy;
 }
 
-td {
-  background-color: lightblue;
+.blue-row td {
+  background-color: #c5d7eb;
+}
+
+.light-row td {
+  background-color: #d2deeb;
+}
+
+.foot-cells {
+  padding: 10px;
+  background-color: #c5d7eb;
 }
