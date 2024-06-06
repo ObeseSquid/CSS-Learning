@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+.label {
+  width: 300px;
+  margin: 0 auto;
+}
+
+.sticker {
+  height: 180px;
+  width: 250px;
+  background-color: #edd400;
+  margin: 0 auto;
+  border: none;
+  border-radius: 10px;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.title h1 {
+  text-transform: uppercase;
+  font-size: 1.8em;
+}
+
+.white-band {
+  width: 100%;
+  background-color: white;
+  margin: 0 auto;
+  height: 40%;
+  padding: 5px;
+}
+
+.white-band p {
+  text-align: center;
+  font-size: 0.8em;
+  margin: 0 auto;
+}
+
+.barcode {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  margin: 0 auto;
+  width: 80%;
+}
+
+.wide-bar {
+  margin: 0 2px;
+  height: 50px;
+  width: 8px;
+  background-color: black;
+}
+
+.thin-bar {
+  margin: 0 1px;
+  height: 50px;
+  width: 2px;
+  background-color: black;
+}
+
+.medium-bar {
+  margin: 0 1.5px;
+  height: 50px;
+  width: 5px;
+  background-color: black;
+}
+
+.title,
+.price {
+  height: 30%;
+}
+
+.price {
+  display: flex;
+  justify-content: center;
+  align-items: left;
+  flex-direction: column;
+}
+
+.price p {
+  font-weight: 700;
+}
+
+.was-price {
+  font-size: 1em;
+  text-transform: lowercase;
+  margin: -3px auto;
+}
+
+.old-price {
+  text-decoration: line-through;
+  text-decoration-thickness: 2px;
+}
+
+.now-price {
+  font-size: 1.8em;
+  text-transform: uppercase;
+  margin: -3px auto;
+  letter-spacing: 1.5px;
+}
