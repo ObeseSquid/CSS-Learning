@@ -1,0 +1,94 @@
+/*
+display: flex: changes the element and child elements into flex items.
+flex-direction: dictates the layout of the flex items.
+flex-wrap: stops child elements breaking out of parent element by starting new rows or columns
+
+
+*/
+
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  background: grey;
+  height: 100px;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  line-height: 100px;
+  margin: 0;
+}
+
+h2 {
+  margin: 10px;
+}
+
+section {
+  background-color: whitesmoke;
+  margin: 10px;
+  border: 2px solid grey;
+  border-radius: 20px;
+  width: auto;
+  height: auto;
+  max-height: 300px;
+}
+
+.sectionOne {
+  display: flex;
+  flex-direction: column;
+}
+
+.sectionTwo {
+  display: flex;
+  flex-direction: row;
+}
+
+.sectionThree {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.sectionFour {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.sectionFive {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.sectionSix {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.sectionSeven {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap-reverse;
+}
+
+.sectionEight {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+}
+
+div {
+  padding: 10px;
+  margin: 10px;
+  height: 50px;
+  width: 50px;
+  background: cornflowerblue;
+  text-align: center;
+}
