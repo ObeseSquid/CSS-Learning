@@ -1,120 +1,43 @@
-/*
-display: flex: changes the element and child elements into flex items.
-flex-direction: dictates the layout of the flex items.
-flex-wrap: stops child elements breaking out of parent element by starting new rows or columns
-
-
-*/
-
-html {
-  font-family: sans-serif;
-}
-
 body {
-  margin: 0;
-  width: 100%;
-}
-
-header {
-  background: grey;
-  height: 100px;
-}
-
-h1 {
-  text-align: center;
-  color: white;
-  line-height: 100px;
-  margin: 0;
-}
-
-h2 {
-  margin: auto;
-  font-size: medium;
-  color: black;
-}
-
-section:not(.learning, .block) {
-  background-color: whitesmoke;
-  margin: 10px;
-  border: 2px solid grey;
-  border-radius: 20px;
-  width: 300px;
-  height: auto;
-  max-height: 250px;
-}
-
-.sectionOne {
+  min-height: 400px;
+  border: 3px solid black;
   display: flex;
-  flex-direction: column;
+
+  /* --- Spacing --- */
+  gap: 10px; /* adds gaps around child elements */
+  column-gap: 30px; /* vertical gaps between child elements */
+  row-gap: 20px; /* horizontal gaps between child elements */
+  flex-wrap: nowrap; /* elements will not go onto new line and will shrink in size */
+  flex-wrap: wrap; /* pushes elments onto new line if there is no space */
+
+  /* --- Direction --- */
+  flex-direction: row-reverse; /* right to left in a row (reverse display) */
+  flex-direction: column; /* top to bottom in a column */
+  flex-direction: column-reverse; /* bottom to top in a column (reverse display) */
+  flex-direction: row; /* left to right in a row */
+
+  /* --- Horizontal Display --- */
+
+  justify-content: flex-start; /* left of the parent */
+  justify-content: flex-end; /* right of the parent */
+  justify-content: space-between; /* pushes first and last to edges then spaces evenly between */
+  justify-content: space-around; /* spaces with gaps on both sides with half spaces on the edges */
+  justify-content: space-evenly; /* evenly spaces all child elements */
+  justify-content: center; /* middle of parent */
+
+  /* --- Vertical Display --- */
+
+  align-items: flex-start; /* top of parent */
+  align-items: flex-end; /* bottom of parent */
+  align-items: center; /* center of parent */
 }
 
-.sectionTwo {
+.box {
   display: flex;
-  flex-direction: row;
-}
-
-.sectionThree {
-  display: flex;
-  flex-direction: row-reverse;
-}
-
-.sectionFour {
-  display: flex;
-  flex-direction: column-reverse;
-}
-
-.sectionFive {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-}
-
-.sectionSix {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
-.sectionSeven {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap-reverse;
-}
-
-.sectionEight {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap-reverse;
-}
-
-div {
-  margin: 10px;
-  height: 30px;
-  width: 30px;
-  background: cornflowerblue;
-  text-align: center;
-  display: flex;
-  justify-content: space-around;
-  line-height: 1;
-  vertical-align: middle;
-}
-
-.learning {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
-  margin: 10px;
   justify-content: center;
-  gap: 20px;
-}
-
-.block {
-  display: flex;
-  flex-direction: column;
-  height: auto;
-  padding: 10px;
-  margin: 0;
-  background-color: slategrey;
-  border-radius: 10px;
+  align-items: center;
+  height: 150px;
+  width: 150px;
+  background-color: cornflowerblue;
+  font-size: 20px;
 }
